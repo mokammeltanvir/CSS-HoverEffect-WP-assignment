@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+}
+body{
+  background-color: #5C5C5C;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+img{
+  height: 600px;
+  width: 400px;
+}
+.line{
+  height: 600px;
+  width: 5px;
+  background: #6E6E6E;
+  margin: 50px;
+}
+.card{
+  height: 600px;
+  margin: 50px;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+}
+.info{
+  height: 100px;
+  width: 400px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  background: none;
+  color: lightgray;
+  bottom: 145px;
+  transition: .5s;
+
+}
+h2{
+  color: #fff;
+  font-size: 40px;
+}
+.info h2{
+  margin-left: -50px;
+}
+p{
+  font-size: 20px;
+  margin: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+.card:hover{
+  cursor: pointer;
+  transition: 0.5s;
+}
+.card:hover .info{
+  height: 350px;
+  transition: .5s;
+  background: #393939;
+  /* margin-top: 100px; */
+
+}
+.card:hover h2{
+  margin: 0;
+  /* transition: .5s; */
+}
+.card:hover p{
+  opacity: 1;
+  visibility: visible;
+  transition: 1s;
+}
+.card:hover img{
+  transform: translateY(-100px);
+  transition: 1s;
+  /* margin-bottom: 100px !important; */
+}
